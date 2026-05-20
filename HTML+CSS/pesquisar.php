@@ -72,7 +72,7 @@ $conn->close();
       margin-top: 60px; /* espaço por causa da seta */
     }
 
-    /* 🔙 Seta igual ao login.php */
+    /* Seta igual ao login.php */
     .back-button {
         position: absolute;
         top: 1rem;
@@ -160,7 +160,7 @@ $conn->close();
 
 <body>
 
-  <!-- 🔙 Seta igual ao login -->
+  <!-- Seta igual ao login -->
   <a href="index.php" class="back-button"><i class='bx bx-arrow-back'></i></a>
 
   <div class="container">
