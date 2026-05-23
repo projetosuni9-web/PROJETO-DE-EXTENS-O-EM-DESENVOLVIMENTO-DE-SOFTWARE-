@@ -154,6 +154,31 @@ LOCK TABLES `usuarios` WRITE;
 INSERT INTO `usuarios` VALUES ('11111111111','admin@biblioteca.com','admin123',1),('22222222222','sara@email.com','123456',2),('33333333333','juliane@email.com','654321',2),('44444444444','paula@email.com','abcdef',2);
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
+
+/* =========================================
+   CONSULTAS SQL
+========================================= */
+
+/* Lista de usuários */
+SELECT * FROM usuarios;
+
+/* Lista de livros */
+SELECT * FROM livros;
+
+/* Histórico de compras */
+SELECT * FROM compras;
+
+/* Livros com categorias e editoras */
+SELECT 
+    livros.titulo,
+    categorias.nome_categoria,
+    editoras.nome_editora
+FROM livros
+INNER JOIN categorias 
+ON livros.id_categoria = categorias.id_categoria
+INNER JOIN editoras 
+ON livros.id_editora = editoras.id_editora;
+
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
