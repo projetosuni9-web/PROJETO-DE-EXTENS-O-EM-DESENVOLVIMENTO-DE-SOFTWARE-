@@ -78,11 +78,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     // executa a query
                     if ($stmt->execute()) {
 
-                        $msg = "Pedido de aluguel enviado com sucesso! Procure a biblioteca para mais informações.";
+                        $msg = "Pedido de compra enviado com sucesso! Procure a biblioteca para mais informações.";
 
                     } else {
 
-                        $msg = "Erro ao solicitar aluguel: " . $stmt->error;
+                        $msg = "Erro ao solicitar compra: " . $stmt->error;
                     }
 
                     // fecha statement
@@ -112,7 +112,7 @@ $conn->close();
 <!-- favicon do site -->
 <link rel="shortcut icon" href="img/FAVICON-Photoroom.ico" type="image/x-icon">
 
-<title>Solicitar Aluguel</title>
+<title>Solicitar Compra</title>
 
 
 
